@@ -1,10 +1,25 @@
 import { Component } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+
+    <!-- header -->
+    <app-general-header></app-general-header>
+
+    <!-- body -->
+    <router-outlet></router-outlet>
+
+    <!-- footer -->
+    <app-general-footer></app-general-footer>
+  `,
+
 })
 export class AppComponent {
-  title = 'axcessiomWeb';
+
+  public constructor(private titleService: Title ) {
+    titleService.setTitle("Axcessiom Technologies ")
+   }
+
 }

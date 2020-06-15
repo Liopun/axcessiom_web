@@ -1,0 +1,8 @@
+body{
+    height:300px;
+}
+
+.header_logo{
+    width: 100%;
+    height: inherit;
+}

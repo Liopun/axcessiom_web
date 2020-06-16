@@ -1,8 +1,8 @@
 version: '3'
 services:
   web_dev:
-    image: freeewind/axcessiom_web
-    container_name: test
+    image: axcessiomweb
+    container_name: axcessiomweb
     build: .
     ports:
       - 4201:4200

@@ -1,6 +1,6 @@
 h1{
     
-    font-size: 40px;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-weight: bold;
     text-align: center;
     margin-top: 20px;

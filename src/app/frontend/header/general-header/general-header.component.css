@@ -1,8 +1,52 @@
-body{
-    height:300px;
+html,body {
+    height:100%;
 }
 
-.header_logo{
-    width: 100%;
-    height: inherit;
+.overlay-cover {
+    height:70vh;
+    min-height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url('/assets/img/bg_1.jpg');
+    position: relative;
+}
+.overlay-content {
+    float: right;
+    padding-right: 10vh;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+}
+.overlay-content h3 {
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 2.0rem;
+}
+.overlay-content h1 a {
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 2.0rem;
+}
+
+#overlay-bottom {
+    height: 25vh;
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+
+nav {
+    padding: 15px;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease; 
+    -o-transition:all 0.5s ease;         
+    transition:all 0.5s ease;  
+}
+nav .navbar-nav .nav-link,
+nav .navbar-brand {
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    /* letter-spacing: .1em; */
+}
+nav.scrolled {
+    background-color: rgb(0,0,0,.5) !important;
 }
